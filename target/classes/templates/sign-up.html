@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-heading {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+        }
+
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <form action="#" enctype="utf8" id="userForm" method="post" th:action="@{/signup-process}" th:object="${userDto}">
+        <h2 class="form-heading">Sign Up Form</h2>
+        <div class="form-group">
+            <input placeholder="First Name" th:field="*{firstName}" type="text"/>
+            <span th:errors="*{firstName}" th:if="${#fields.hasErrors('firstName')}"></span><br/>
+        </div>
+        <div class="form-group">
+            <input placeholder="Last Name" th:field="*{lastName}" type="text"/>
+            <span th:errors="*{lastName}" th:if="${#fields.hasErrors('lastName')}"></span><br/>
+        </div>
+        <div class="form-group">
+            <input placeholder="Email" th:field="*{email}" type="text"/>
+            <span th:errors="*{email}" th:if="${#fields.hasErrors('email')}"></span><br/>
+        </div>
+
+        <div class="form-group">
+            <input placeholder="User Name" th:field="*{userName}" type="text"/>
+            <span th:errors="*{userName}" th:if="${#fields.hasErrors('userName')}"></span><br/>
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input id="password" placeholder="Password" th:field="*{password}" type="password"/>
+            <span th:errors="*{password}" th:if="${#fields.hasErrors('password')}"></span><br/>
+            <small class="form-text text-muted password-requirements">Password must be at least 8 characters long and contain at least one uppercase letter, one lowercase letter, and one number.</small>
+        </div>
+        <div class="form-group">
+            <input placeholder="Repeat Password" th:field="*{matchingPassword}" type="password"/>
+            <span th:errors="*{matchingPassword}" th:if="${#fields.hasErrors('matchingPassword')}"></span><br/>
+        </div>
+
+        <div class="form-group">
+            <label for="targetWordsPerDay">Target words per day</label>
+            <select id="targetWordsPerDay" th:field="*{targetWordsPerDay}">
+                <option value=1>1</option>
+                <option value=3>3</option>
+                <option value=5>5</option>
+                <option value=7>7</option>
+            </select>
+            <span th:errors="*{role}" th:if="${#fields.hasErrors('role')}"></span><br/>
+        </div>
+
+        <!-- Role selection -->
+        <div class="form-group">
+            <label for="role">Select Role:</label>
+            <select id="role" th:field="*{role}">
+                <option value="ROLE_USER">User</option>
+                <option value="ROLE_ADMIN">Admin</option>
+            </select>
+            <span th:errors="*{role}" th:if="${#fields.hasErrors('role')}"></span><br/>
+        </div>
+
+        <input class="btn btn-primary btn-block" id="submitButton" name="submitButton" type="submit" value="Submit"/>
+    </form>
+</div>
+<script type="text/javascript" th:src="@{/js/user_validate.js}"></script>
+</body>
+</html>
