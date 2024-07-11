@@ -1,7 +1,7 @@
-package org.duyphung.vocamemo.services;
+package org.duyphung.jobmarketplace.services;
 
-import org.duyphung.vocamemo.entities.UserEntity;
-import org.duyphung.vocamemo.sercurity.UserDTO;
+import org.duyphung.jobmarketplace.entities.UserEntity;
+import org.duyphung.jobmarketplace.sercurity.UserDTO;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 

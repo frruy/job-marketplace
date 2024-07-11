@@ -1,11 +1,9 @@
-package org.duyphung.vocamemo.entities;
+package org.duyphung.jobmarketplace.entities;
 
 import jakarta.persistence.*;
 import lombok.*;
 
-import java.util.HashSet;
 import java.util.Objects;
-import java.util.Set;
 
 @Data
 @Entity

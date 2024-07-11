@@ -1,12 +1,12 @@
-package org.duyphung.vocamemo.services;
+package org.duyphung.jobmarketplace.services;
 
 import jakarta.transaction.Transactional;
 import lombok.extern.slf4j.Slf4j;
-import org.duyphung.vocamemo.entities.RoleEntity;
-import org.duyphung.vocamemo.entities.UserEntity;
-import org.duyphung.vocamemo.repositories.UserRepository;
-import org.duyphung.vocamemo.sercurity.UserDTO;
-import org.duyphung.vocamemo.sercurity.UserPrincipal;
+import org.duyphung.jobmarketplace.entities.RoleEntity;
+import org.duyphung.jobmarketplace.entities.UserEntity;
+import org.duyphung.jobmarketplace.repositories.UserRepository;
+import org.duyphung.jobmarketplace.sercurity.UserDTO;
+import org.duyphung.jobmarketplace.sercurity.UserPrincipal;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.convention.MatchingStrategies;
 import org.springframework.beans.factory.annotation.Autowired;

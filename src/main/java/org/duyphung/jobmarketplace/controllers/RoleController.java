@@ -1,7 +1,7 @@
-package org.duyphung.vocamemo.controllers;
+package org.duyphung.jobmarketplace.controllers;
 
-import org.duyphung.vocamemo.entities.RoleEntity;
-import org.duyphung.vocamemo.services.RoleServiceImpl;
+import org.duyphung.jobmarketplace.entities.RoleEntity;
+import org.duyphung.jobmarketplace.services.RoleServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -1,9 +1,9 @@
-package org.duyphung.vocamemo.controllers;
+package org.duyphung.jobmarketplace.controllers;
 
 import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
-import org.duyphung.vocamemo.services.UserServiceImpl;
-import org.duyphung.vocamemo.sercurity.UserDTO;
+import org.duyphung.jobmarketplace.services.UserServiceImpl;
+import org.duyphung.jobmarketplace.sercurity.UserDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.propertyeditors.StringTrimmerEditor;
 import org.springframework.stereotype.Controller;

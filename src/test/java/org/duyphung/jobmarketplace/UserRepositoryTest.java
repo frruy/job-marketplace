@@ -1,7 +1,7 @@
-package org.duyphung.vocamemo;
+package org.duyphung.jobmarketplace;
 
-import org.duyphung.vocamemo.entities.UserEntity;
-import org.duyphung.vocamemo.repositories.UserRepository;
+import org.duyphung.jobmarketplace.entities.UserEntity;
+import org.duyphung.jobmarketplace.repositories.UserRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;

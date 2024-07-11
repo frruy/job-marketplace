@@ -1,7 +1,7 @@
-package org.duyphung.vocamemo.utils;
+package org.duyphung.jobmarketplace.utils;
 
-import org.duyphung.vocamemo.entities.UserEntity;
-import org.duyphung.vocamemo.sercurity.UserPrincipal;
+import org.duyphung.jobmarketplace.entities.UserEntity;
+import org.duyphung.jobmarketplace.sercurity.UserPrincipal;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 

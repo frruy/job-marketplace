@@ -1,7 +1,7 @@
-package org.duyphung.vocamemo;
+package org.duyphung.jobmarketplace;
 
-import org.duyphung.vocamemo.entities.RoleEntity;
-import org.duyphung.vocamemo.repositories.RoleRepository;
+import org.duyphung.jobmarketplace.entities.RoleEntity;
+import org.duyphung.jobmarketplace.repositories.RoleRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;

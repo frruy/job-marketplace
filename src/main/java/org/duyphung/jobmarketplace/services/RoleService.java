@@ -1,7 +1,7 @@
-package org.duyphung.vocamemo.services;
+package org.duyphung.jobmarketplace.services;
 
 
-import org.duyphung.vocamemo.entities.RoleEntity;
+import org.duyphung.jobmarketplace.entities.RoleEntity;
 
 import java.util.List;
 

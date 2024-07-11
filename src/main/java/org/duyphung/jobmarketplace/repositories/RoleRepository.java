@@ -1,6 +1,6 @@
-package org.duyphung.vocamemo.repositories;
+package org.duyphung.jobmarketplace.repositories;
 
-import org.duyphung.vocamemo.entities.RoleEntity;
+import org.duyphung.jobmarketplace.entities.RoleEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;

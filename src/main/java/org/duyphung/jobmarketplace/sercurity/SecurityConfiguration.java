@@ -1,6 +1,6 @@
-package org.duyphung.vocamemo.sercurity;
+package org.duyphung.jobmarketplace.sercurity;
 
-import org.duyphung.vocamemo.services.UserServiceImpl;
+import org.duyphung.jobmarketplace.services.UserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

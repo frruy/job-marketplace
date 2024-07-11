@@ -1,4 +1,4 @@
-package org.duyphung.vocamemo.sercurity;
+package org.duyphung.jobmarketplace.sercurity;
 
 import jakarta.persistence.Column;
 import jakarta.validation.constraints.Email;

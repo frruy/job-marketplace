@@ -1,7 +1,7 @@
-package org.duyphung.vocamemo.sercurity;
+package org.duyphung.jobmarketplace.sercurity;
 
-import org.duyphung.vocamemo.entities.RoleEntity;
-import org.duyphung.vocamemo.entities.UserEntity;
+import org.duyphung.jobmarketplace.entities.RoleEntity;
+import org.duyphung.jobmarketplace.entities.UserEntity;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;

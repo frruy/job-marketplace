@@ -1,4 +1,4 @@
-package org.duyphung.vocamemo.entities;
+package org.duyphung.jobmarketplace.entities;
 
 import jakarta.persistence.*;
 import lombok.*;

@@ -1,4 +1,4 @@
-package org.duyphung.vocamemo;
+package org.duyphung.jobmarketplace;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
